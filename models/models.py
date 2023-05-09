@@ -107,9 +107,9 @@ class Self2SelfPlus(nn.Module) :
         
         # Compute Loss
         if self.opt.lossType == "L1" :
-            loss["N2N"] = torch.abs((denoisedImage-noisyImage)*(1-mask)).sum()/(1-mask).sum()
+            loss["Self-Supervised"] = torch.abs((denoisedImage-noisyImage)*(1-mask)).sum()/(1-mask).sum()
         elif self.opt.lossType == "L2" :
-            loss["N2N"] = torch.pow((denoisedImage-noisyImage)*(1-mask), 2).sum()/(1-mask).sum()
+            loss["Self-Supervised"] = torch.pow((denoisedImage-noisyImage)*(1-mask), 2).sum()/(1-mask).sum()
         
         # Compute IQA Loss
         loss["IQA"] = self.criterionIQA(denoisedImage)*self.opt.lambdaIQA

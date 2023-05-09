@@ -45,7 +45,7 @@ def main() :
                 loss = model(noisyImage, mode="train")
                 
                 # Compute Loss
-                lossN2N = loss["N2N"].item()
+                lossSS = loss["Self-Supervised"].item()
                 lossIQA = loss["IQA"].item()
                 
                 # Back-Propagation
@@ -54,7 +54,7 @@ def main() :
                 optimizer.step()
 
                 # Show Training Procedure
-                pBar.set_description(desc=f"[{iter}/{opt.numIters}] < Loss(N2N):{lossN2N:.8f} | Loss(IQA):{lossIQA:.8f} >")
+                pBar.set_description(desc=f"[{iter}/{opt.numIters}] < Loss(Self-Supervised):{lossSS:.8f} | Loss(IQA):{lossIQA:.8f} >")
                 pBar.update()
 
         # Get Inference Result
