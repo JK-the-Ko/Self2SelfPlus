@@ -16,7 +16,7 @@ def addAllArguments(parser):
     parser.add_argument("--seed", type=int, default=42, help="random seed")
     parser.add_argument("--gpuIds", type=str, default="0", help="use 0 for gpu, -1 for CPU")
     parser.add_argument("--dataRoot", type=str, default="dataset/", help="path to dataset root")
-    parser.add_argument("--dataType", type=str, required=True, help="data type type for training, choices from {CBSD68 | SIDD}")
+    parser.add_argument("--dataType", type=str, required=True, help="data type type for training, choices from {CBSD68 | SIDD | PolyU}")
     parser.add_argument("--sigma", type=int, default=25, help="standard deviation of synthetic noise distribution, choices from {15 | 25 | 50}")
     parser.add_argument("--p", type=float, default=0.4, help="probability of dropout")
     parser.add_argument("--numWorkers", type=int, default=0, help="num_workers argument for dataloader")
