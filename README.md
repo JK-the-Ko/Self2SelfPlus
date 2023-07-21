@@ -2,7 +2,7 @@
 Details regrading the codes will be uploaded soon.
 
 ## Citation
-If you use Self2Self+ in your work, please consider citing us as
+If you use **Self2Self+** in your work, please consider citing us as
 
 ```
 @misc{ko2023self2self,
