@@ -49,11 +49,6 @@ class Self2SelfPlus(nn.Module) :
         else :
             raise ValueError(f"{mode} is not supported")
 
-    def loadCheckpoints(self, loadModel) :
-        if loadModel :
-            self.net = utils.loadNetwork(self.opt, self.net)
-            print("Model Loaded!")
-        
     ############################################################################
     # Private helper methods
     ############################################################################
