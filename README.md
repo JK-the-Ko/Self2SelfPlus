@@ -25,6 +25,28 @@ cd Self2SelfPlus/
 pip install -r requirements.txt
 ```
 
+## Dataset
+- CBSD68 dataset with AWGN of 15, 25, and 50. The following dataset should be placed in ```dataset/CBSD68/sigma-N``` folder
+- SIDD dataset. The following dataset should be placed in ```dataset/SIDD/Noisy``` folder
+- PolyU dataset. The following dataset should be placed in ```dataset/PolyU/real``` folder
+
+## Training
+The following script is for training **CBSD68 dataset with different AWGNs**. We recommend using commands written in the scripts folder.
+```
+python train.py --dataType CBSD68 --sigma AWGN-SIGMA --p 0.4 --numIters 4000
+```
+The following script is for training **SIDD dataset**. We recommend using commands written in the scripts folder.
+```
+python train.py --dataType SIDD --p 0.9 --numIters 1000
+```
+The following script is for training **PolyU dataset**. We recommend using commands written in the scripts folder.
+```
+python train.py --dataType PolyU --p 0.7 --numIters 5000
+```
+
+## Pre-Trained Models
+Since it is a single-image self-supervised learning task, **no pre-trained models can be given**.
+
 ## Citation
 If you use **Self2Self+** in your work, please consider citing us as
 
