@@ -44,6 +44,9 @@ The following script is for training **PolyU dataset**. We recommend using comma
 python train.py --dataType PolyU --p 0.7 --numIters 5000
 ```
 
+## Evaluation
+During training, the final result will be saved automatically in ```results/dataset-name``` folder.
+
 ## Pre-Trained Models
 Since it is a single-image self-supervised learning task, **no pre-trained models can be given**.
 
