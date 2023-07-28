@@ -26,9 +26,9 @@ pip install -r requirements.txt
 ```
 
 ## Dataset
-- CBSD68 dataset with AWGN of 15, 25, and 50. The following dataset should be placed in ```dataset/CBSD68/sigma-N``` folder
-- SIDD dataset. The following dataset should be placed in ```dataset/SIDD/Noisy``` folder
-- PolyU dataset. The following dataset should be placed in ```dataset/PolyU/real``` folder
+- CBSD68 dataset with AWGN of 15, 25, and 50. The following dataset should be placed in ```dataset/CBSD68/sigma-N``` folder.
+- SIDD dataset. The following dataset should be placed in ```dataset/SIDD/Noisy``` folder.
+- PolyU dataset. The following dataset should be placed in ```dataset/PolyU/real``` folder.
 
 ## Training
 The following script is for training **CBSD68 dataset with different AWGNs**. We recommend using commands written in the scripts folder.
