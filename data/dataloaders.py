@@ -14,7 +14,7 @@ def getDataLoaders(opt) :
         datasetName = "PolyUDataset"
         imageSavePath = f"{opt.resultsDir}/{opt.name}/{opt.dataType}"
     else :
-        raise ValueError(f"{opt.dataType} is not supported")
+        raise NotImplementedError(f"{opt.dataType} is not supported")
 
     # Import Python Code
     fileName = importlib.import_module(f"data.{datasetName}")
