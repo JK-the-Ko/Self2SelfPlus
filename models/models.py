@@ -47,7 +47,7 @@ class Self2SelfPlus(nn.Module) :
                         pBar.update()
             return finalImage/self.opt.numSample
         else :
-            raise ValueError(f"{mode} is not supported")
+            raise NotImplementedError(f"{mode} is not supported")
 
     ############################################################################
     # Private helper methods
